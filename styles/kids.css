@@ -210,9 +210,11 @@
    color: #8700FF;
    text-decoration: none;
   }
+  .fa-solid{
+   color: #F0AA00;
+  }
   .arrow{
    text-align: center;
-   color: #F0AA00;
   }
   
   /* Responsive Media Query */
