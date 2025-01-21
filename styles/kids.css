@@ -8,20 +8,20 @@
   /* shared styles */
    .header{
       margin: 20px 140px 60px 140px;
+      box-sizing: border-box;
    }
   /* Nav-bar related styles */
   .navbar{
      display: flex;
      align-items: center;
      justify-content: space-between;
+   
   }
   .school-logo{
      display: flex;
      gap: 1rem;
   }
-  .school-name{
-
-  }
+  
   .Nav-Links{
     display: flex;
     align-items: center;
@@ -29,9 +29,7 @@
     list-style: none;
     gap: 3rem;
   }
-  .nav-item{
-    
-  }
+  
   #link{
    text-decoration: none;
    }
@@ -69,9 +67,12 @@
    background-color: #FEA301;
    border: none;
    border-radius: 0.75rem;
+   
   }
   .burger{
    display: none;
+   font-size: 2rem;
+   cursor: pointer;
   }
   /* Banner section styles */
   .banner{
@@ -111,5 +112,49 @@
    border-radius: 0.75rem;
   }
   .banner-image{
- 
+   max-width: 100%;
+   height: auto;
+  }
+  
+  /* Responsive Media Query */
+  @media screen and (max-width: 576px) {
+    
+   .Nav-Links{
+      display: none;
+   }
+   #link{
+      display: none;
+   }
+   .nav-button{
+      display: none;
+   }
+   .school-name{
+      display: none;
+   }
+   .burger{
+      display: block;
+   }
+   .banner{
+      flex-direction: column-reverse;
+      text-align: center;
+      align-items: center;
+      padding: 1rem;
+   }
+   .banner-title{
+      font-size: 2rem;
+   }
+   .banner-description{
+      font-size: 1rem;
+   }
+   .banner-image{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+   }
+   .banner-image img {
+      max-width: 100%;
+      height: auto;
+      object-fit: cover;
+   }
   }
