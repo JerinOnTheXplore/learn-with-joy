@@ -380,6 +380,77 @@
    background-color: rgba(0, 0, 0, 1);
    border: none;
   }
+  /* Footer related styles */
+  .footer{
+    background-color: #01ACFD;
+ 
+  }
+  .footer-container{
+
+   padding: 60px 150px;
+   display: flex;
+   gap: 160px;
+  }
+  .education{
+   display: flex;
+   flex-direction: column;
+   align-items:flex-start;
+   justify-content: space-between;
+   
+  }
+  .row{
+   display: flex;
+  
+  }
+  .footer-logo{
+   max-width: 100%;
+   height: auto;
+   margin-top: 60px;
+  }
+  .edu-title{
+   font-family: "Quicksand", serif;
+   font-weight: 700;
+   font-size: 2.63rem;
+   color: #FFFFFF;
+   
+  }
+  .edu-description{
+   font-family: "Quicksand", serif;
+   font-weight: 400;
+   font-size: 1.25rem;
+   color: #FFFFFF;
+  }
+  .footer-about{
+   font-family: "Quicksand", serif;
+   font-weight: 700;
+   font-size: 1.5rem;
+   color: #FFFFFF;
+  }
+  .about-title{
+  text-align: center;
+  }
+  .footer-links{
+   list-style: none;
+   justify-content: center;
+   align-items: center;
+  }
+  .footer-link{
+text-decoration: none;
+font-family: "Quicksand", serif;
+font-weight: 500;
+font-size: 1.25rem;
+color: #FFFFFF;
+  }
+  .keep-touch{
+   font-family: "Quicksand", serif;
+   font-weight: 700;
+   font-size: 1.625rem;
+   color:#FFFFFF ;
+  }
+  .search{
+display: flex;
+gap: 5px;
+  }
 
 
 
@@ -445,7 +516,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      
+
      }
      .arrow{
       display: none;
@@ -464,6 +535,12 @@
    max-width: 100%;
       height: auto;
       object-fit: cover;
+}
+
+.footer-container{
+   display: flex;
+   flex-direction: column;
+   text-align: left;
 }
 
   }
