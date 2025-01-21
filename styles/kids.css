@@ -445,9 +445,25 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      
      }
      .arrow{
       display: none;
      }
-     
+     /* Responsive nature of our stories */
+    .story-image-card-1{
+      display: none;
+     }
+     .story-container{
+      display: grid;
+      grid-template-columns:1fr;
+      justify-content: center;
+      align-items: center;
+}
+#img-2,#img-3,#img-4,#img{
+   max-width: 100%;
+      height: auto;
+      object-fit: cover;
+}
+
   }
