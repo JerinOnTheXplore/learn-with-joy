@@ -8,7 +8,10 @@
   /* shared styles */
    .header{
       margin: 20px 140px 60px 140px;
-      box-sizing: border-box;
+      box-sizing: border-box; 
+   }
+   main{
+     
    }
   /* Nav-bar related styles */
   .navbar{
@@ -115,10 +118,108 @@
    max-width: 100%;
    height: auto;
   }
+  /* Standard curriculum related styles */
+  .standard-curriculum{
+   background-image: url(../assets/bg.png);
+  background-repeat:no-repeat;
+   background-size: cover;
+   background-position: center;
+ 
+
+  }
+  .curriculum-title{
+   font-family: "Quicksand", serif;
+   font-weight: 700;
+   font-size: 2.875rem;
+   color: #000000;
+   text-align: center;
+   margin-top: 60px;
+}
+  .card-container{
+   display: flex;
+   gap: 2rem;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+  
+  
+  
+  }
+  .card-1{
+   background:linear-gradient(#DEF5FF, #FFFFFF);
+   border-radius: 1.125rem;
+   box-shadow: 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+   padding: 3rem;
+   max-width: 400px;
+   
+  }
+  .card-2{
+   background: linear-gradient(#FFF4DC, #FFFFFF);
+   border-radius: 1.125rem;
+   box-shadow: 0ox 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+   padding: 3rem;
+   max-width: 400px;
+  }
+  .card-3{
+   background: linear-gradient(#F2E8FF, #FFFFFF);
+   border-radius: 1.125rem;
+   box-shadow: 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+   padding: 3rem;
+   max-width: 400px;
+  }
+  .card-image{
+   
+   text-align: center;
+  }
+  .card-title{
+   font-family: "Quicksand", serif;
+   font-weight: 700;
+   font-size: 1.5rem;
+   color: #202020;
+   text-align: center;
+  }
+  .card-description{
+   font-family: "Raleway", serif;
+   font-weight:500 ;
+   font-size: 0.943125rem;
+   color: #808080;
+   text-align: center;
+  }
+  .read-more{
+   font-family: "Quicksand", serif;
+   text-align: center;
+  }
+  .read-more-1{
+   font-family: "Quicksand", serif;
+   font-weight: 700;
+   font-size: 0.943125rem;
+   color: #64C8FF;
+   text-decoration: none;
+   }
+  .read-more-2{
+   font-family: "Quicksand", serif;
+   font-weight: 700;
+   font-size: 0.943125rem;
+   color: #F0AA00;
+   text-decoration: none;
+   }
+  .read-more-3{
+   font-family: "Quicksand", serif;
+   font-weight: 700;
+   font-size: 0.943125rem;
+   color: #8700FF;
+   text-decoration: none;
+  }
+  .arrow{
+   text-align: center;
+   color: #F0AA00;
+  }
   
   /* Responsive Media Query */
   @media screen and (max-width: 576px) {
-    
+    .header{
+      margin: 0;
+    }
    .Nav-Links{
       display: none;
    }
@@ -133,6 +234,12 @@
    }
    .burger{
       display: block;
+   }
+   .navbar{
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 2px solid #F0AA00;
+      padding-bottom: 10px;
    }
    .banner{
       flex-direction: column-reverse;
@@ -157,4 +264,19 @@
       height: auto;
       object-fit: cover;
    }
+   /* Responsive curriculum */
+   
+   .card-container{
+      flex-direction: column;
+      gap: 1rem;
+   }
+   .curriculum-title{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     }
+     .arrow{
+      display: none;
+     }
+     
   }
