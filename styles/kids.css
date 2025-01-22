@@ -5,14 +5,16 @@
     font-weight: 400;
     font-style: normal;
   }
+  *{margin: 0;
+   padding: 0;
+   
+  }
   /* shared styles */
    .header{
       margin: 20px 140px 60px 140px;
       box-sizing: border-box; 
    }
-   main{
-     
-   }
+   
   /* Nav-bar related styles */
   .navbar{
      display: flex;
@@ -219,7 +221,7 @@
   /* Story section related styles */
   .our-stories{
    background-image: url(../assets/bg.png);
-  background-repeat: no-repeat;
+   background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background: linear-gradient(#FFFFFF, #FFD892);
@@ -230,12 +232,14 @@
    font-weight: 700;
    font-size: 2.875rem;
    color: #000000;
+  
+   
   }
   .story-container{
    display: grid;
-   grid-template-columns: repeat(3, 1fr);
-   padding-right: 150px;
-   padding-left: 150px;
+   grid-template-columns:repeat(3, 1fr);
+   padding: 180px;
+   margin-top: -120px;
    gap: 19px;
   }
   .story-image-card-1{
@@ -245,7 +249,10 @@
    text-align: center;
    background-color: #FFFFFF;
   }
-  #img-1{
+  #left-card{
+   border-radius: 1rem;
+  }
+  #right-cards{
   border-radius: 1rem;
   }
   .story-image-card-2{
@@ -253,38 +260,30 @@
    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
    text-align: center;
    background-color: #FFFFFF;
+   width: 100%;
   }
-  #img-2{
-   border-radius: 1rem;
-  }
+  
   .story-image-card-3{
    border-radius: 1rem;
    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
    text-align: center;
    background-color: #FFFFFF;
-   
-  }
-  #img-3{
-   border-radius: 1rem;
-  }
-
-  .story-image-card-4{
+   width: 100%;
+   }
+   .story-image-card-4{
    border-radius: 1rem;
    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
    text-align: center;
    background-color: #FFFFFF;
-  }
-  #img-4{
-   border-radius: 1rem;
+   width: 100%;
   }
   .story-image-card-5{
    border-radius: 1rem;
    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
    text-align: center;
    background-color: #FFFFFF;
-  }
-  #img-5{
-   border-radius: 1rem;
+   width: 100%;
+   height: auto;
   }
   .story-title{
   text-align: center;
@@ -299,7 +298,6 @@
    font-size: 0.95875rem;
    color: #666666;
   text-align: center;
-
   }
   .button-1{
    font-family: "Raleway", serif;
@@ -311,8 +309,7 @@
    height: 47px;
    border-radius:47px;
    border: none;
-   
-  }
+   }
   .button-2{
    font-family: "Raleway", serif;
    font-weight: 500;
@@ -363,7 +360,7 @@
   }
   #btn{
    margin-left: -80px;
-   margin-top: -150px;
+   margin-top: -20px;
   }
   .down{
    text-align: center;
@@ -374,7 +371,7 @@
    font-size: 1.25rem;
    width: 197px;
    height: 50px;
-   margin-top: 80px;
+  margin-bottom: 60px;
    border-radius: 12px;
    color: #FFFFFF;
    background-color: rgba(0, 0, 0, 1);
@@ -383,37 +380,37 @@
   /* Footer related styles */
   .footer{
     background-color: #01ACFD;
- 
-  }
+    padding-top: 20px;
+    }
   .footer-container{
-
-   padding: 60px 150px;
    display: flex;
-   gap: 160px;
+   justify-content: center;
+   gap: 250px;
+   flex-wrap: wrap;
+   max-width: 100%;
+   overflow-x: hidden;
   }
   .education{
    display: flex;
    flex-direction: column;
-   align-items:flex-start;
-   justify-content: space-between;
-   
+   text-align: center;
+   max-width: 100%;
   }
   .row{
    display: flex;
-  
-  }
-  .footer-logo{
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+   flex-wrap: wrap;
    max-width: 100%;
-   height: auto;
-   margin-top: 60px;
   }
   .edu-title{
    font-family: "Quicksand", serif;
    font-weight: 700;
    font-size: 2.63rem;
    color: #FFFFFF;
-   
-  }
+   text-align: left;
+   }
   .edu-description{
    font-family: "Quicksand", serif;
    font-weight: 400;
@@ -427,7 +424,7 @@
    color: #FFFFFF;
   }
   .about-title{
-  text-align: center;
+   text-align: center;
   }
   .footer-links{
    list-style: none;
@@ -449,7 +446,11 @@ color: #FFFFFF;
   }
   .search{
 display: flex;
+margin-bottom:100px ;
 gap: 5px;
+  }
+  .display-hidden{
+   display: none;
   }
 
 
@@ -516,31 +517,68 @@ gap: 5px;
       display: flex;
       justify-content: center;
       align-items: center;
-
      }
      .arrow{
       display: none;
      }
      /* Responsive nature of our stories */
-    .story-image-card-1{
-      display: none;
+    .our-stories{
+      width: 100%;
+      height: auto;
+      margin: 0px 0px;
+      padding: 0px 0px;
+    }
+     .story-image-card-1{
+     display: none;
+     }
+     .story-image-card-2,.story-image-card-3,.story-image-card-4,.story-image-card-5{
+      text-align: center;
      }
      .story-container{
       display: grid;
-      grid-template-columns:1fr;
-      justify-content: center;
-      align-items: center;
-}
-#img-2,#img-3,#img-4,#img{
-   max-width: 100%;
+      grid-template-columns:repeat(2, 1fr);
+    justify-content: center;
+     gap: 15px;
+     
+   }
+     #btn{
+      width: 50%;
+   }
+     #right-cards{
+      max-width: 100%;
       height: auto;
-      object-fit: cover;
-}
+     }
+     /* Footer */
+     .footer-container{
+     flex-direction: column;
+     gap: 20px;
+     padding: 20px;
 
-.footer-container{
-   display: flex;
-   flex-direction: column;
-   text-align: left;
-}
+     }
+     .footer-logo{
+      
+     }
+     .row{
+      text-align: left;
+      }
+     .education{
+      align-items:center;
+      text-align: left;
+      padding: 10px;
+      width: 100%;
+     }
+     .edu-title{
+      text-align: left;
+     }
+     .edu-details{
+      text-align: left;
+     }
+     .about-title{
+      text-align: left;
+     }
+     .footer{
+      padding: 10px;
+      width: 100%;
+     }
+   }
 
-  }
